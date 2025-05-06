@@ -22,7 +22,7 @@ swig_add_library(example
                  SOURCES swig/example.i src/example.cpp)
 target_link_libraries(example ${LUAJIT_LIBRARIES})
 
-add_executable(luajit-swig-test src/main.cpp)
-target_link_libraries(luajit-swig-test ${LUAJIT_LIBRARIES} example)
+add_executable(luajit-cpp-swig-interop src/main.cpp)
+target_link_libraries(luajit-cpp-swig-interop ${LUAJIT_LIBRARIES} example)
 
 file(COPY ${CMAKE_SOURCE_DIR}/scripts/ DESTINATION ${CMAKE_BINARY_DIR}/scripts/)
