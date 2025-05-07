@@ -4,12 +4,10 @@ This is tiny example interop between LuaJIT and C++
 
 ## Usage
 
-(for example on mac)
-
 ```bash
-$ cmake -B build -GXcode -DCMAKE_BUILD_TYPE=Debug
-$ cmake --build build --parallel 8 --config Debug
-$ ./build/Debug/luajit-cpp-swig-interop
+$ cmake -B build -DCMAKE_BUILD_TYPE=Debug
+$ cmake --build build --parallel 8
+$ ./build/luajit-cpp-swig-interop
 
 C++ add called with: 5.5, 7.3
 Sum:	12.8
